@@ -5,21 +5,21 @@
 class McpServer < Formula
   desc "Tiny Systems MCP server — local AI flow builder for Kubernetes"
   homepage "https://github.com/tiny-systems/mcp-server"
-  version "0.1.5"
+  version "0.1.6"
   license "BSL-1.1"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/tiny-systems/mcp-server/releases/download/v0.1.5/mcp-server_darwin_amd64.tar.gz"
-      sha256 "3782b003ea8230c908641c52e1888d0c432dcfb98e030b99c01730e8ea355c31"
+      url "https://github.com/tiny-systems/mcp-server/releases/download/v0.1.6/mcp-server_darwin_amd64.tar.gz"
+      sha256 "0f3a13c93c191e30ed3642746de2116deca6dba13a441bb81f0e619fd8c53b40"
 
       define_method(:install) do
         bin.install "mcp-server"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/tiny-systems/mcp-server/releases/download/v0.1.5/mcp-server_darwin_arm64.tar.gz"
-      sha256 "9e59ecbc947ac48170b53006174cd28de5bdf4ea534dbab6d2a774a8a453a108"
+      url "https://github.com/tiny-systems/mcp-server/releases/download/v0.1.6/mcp-server_darwin_arm64.tar.gz"
+      sha256 "8bc52c2495322dbbdaba2ba0270e2324452909efc84b638a1af5eedbbb9cf83c"
 
       define_method(:install) do
         bin.install "mcp-server"
@@ -29,15 +29,15 @@ class McpServer < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/tiny-systems/mcp-server/releases/download/v0.1.5/mcp-server_linux_amd64.tar.gz"
-      sha256 "2089f6d36268ea0b94a851659df953fe1281d06f9f787170bc028b6df0ddce58"
+      url "https://github.com/tiny-systems/mcp-server/releases/download/v0.1.6/mcp-server_linux_amd64.tar.gz"
+      sha256 "08c8aa13b168056279d8101db8037a7cc1a24cc7fb6f274ecb8cd62d049b290b"
       define_method(:install) do
         bin.install "mcp-server"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/tiny-systems/mcp-server/releases/download/v0.1.5/mcp-server_linux_arm64.tar.gz"
-      sha256 "a2cbcaf13019bc1a48956ea41c731ea02a06df0681dd46f15a917edb8f8c46db"
+      url "https://github.com/tiny-systems/mcp-server/releases/download/v0.1.6/mcp-server_linux_arm64.tar.gz"
+      sha256 "aced6d1855b536931c15fe23d7d71ee3c1a99020ae77eb26412f062fa5a490dc"
       define_method(:install) do
         bin.install "mcp-server"
       end
