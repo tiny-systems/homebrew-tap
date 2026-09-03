@@ -11,7 +11,7 @@ class Tiny < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/tiny-systems/tiny/releases/download/v0.8.0/tiny_0.8.0_darwin_amd64.tar.gz"
-      sha256 "128140d565b2b66afed1ede55415398941f07a422491595fc67d1530daca4572"
+      sha256 "3608354b07a4b32661848e13928edd5116d2cde0ff785894f8226caf5033e02d"
 
       define_method(:install) do
         bin.install "tiny"
@@ -19,7 +19,7 @@ class Tiny < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/tiny-systems/tiny/releases/download/v0.8.0/tiny_0.8.0_darwin_arm64.tar.gz"
-      sha256 "7277925dbd35614fd8c619264946234cfb48751be11df582553bdd90b503a558"
+      sha256 "a7d98e153be5c85048a1b6016236b4e5a49dbbe4c3f4cd5c502b9688a792ecce"
 
       define_method(:install) do
         bin.install "tiny"
@@ -30,14 +30,14 @@ class Tiny < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/tiny-systems/tiny/releases/download/v0.8.0/tiny_0.8.0_linux_amd64.tar.gz"
-      sha256 "8ca03d1ec7099cac9cb869193c608033334c2420614e34835d55f956fe3fd1d3"
+      sha256 "8b9764f0aeb6dd338a9beda867069b86874fd641b7b4cd36c06f91f76dfa157d"
       define_method(:install) do
         bin.install "tiny"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/tiny-systems/tiny/releases/download/v0.8.0/tiny_0.8.0_linux_arm64.tar.gz"
-      sha256 "1db855a66e64c0c00c3788ee525e45ce3dcdf1a47c8e9e4a830d85a527f7256a"
+      sha256 "c01edd63f71a772fa7bab936f37a028a7da0a6e4cf0da09064d7ae96b8d4912d"
       define_method(:install) do
         bin.install "tiny"
       end
