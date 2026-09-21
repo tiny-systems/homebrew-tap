@@ -5,21 +5,21 @@
 class Tiny < Formula
   desc "Self-hosted AI agents on your own Kubernetes"
   homepage "https://tinysystems.io"
-  version "0.9.1"
+  version "0.10.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/tiny-systems/tiny/releases/download/v0.9.1/tiny_0.9.1_darwin_amd64.tar.gz"
-      sha256 "c24c206cc1e71dd7f283b3ce009beaa336e751d6ded816d1fc568eb74df80a93"
+      url "https://github.com/tiny-systems/tiny/releases/download/v0.10.0/tiny_0.10.0_darwin_amd64.tar.gz"
+      sha256 "0829fc34000a10c4874ce1d30bb309432310f3a2aced26f9fd92dd46ab904506"
 
       define_method(:install) do
         bin.install "tiny"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/tiny-systems/tiny/releases/download/v0.9.1/tiny_0.9.1_darwin_arm64.tar.gz"
-      sha256 "fd5fb1f1efb949f07daad6f4dd1351fe6fc6966a929b4741f90f6ebb779b7dc8"
+      url "https://github.com/tiny-systems/tiny/releases/download/v0.10.0/tiny_0.10.0_darwin_arm64.tar.gz"
+      sha256 "065acb923ea1d083308d5fa742bb393547e0b8b9b07564255c5815e3264feb3e"
 
       define_method(:install) do
         bin.install "tiny"
@@ -29,15 +29,15 @@ class Tiny < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/tiny-systems/tiny/releases/download/v0.9.1/tiny_0.9.1_linux_amd64.tar.gz"
-      sha256 "48a8a06c0f74d7a9089fecce09748b8b55896324ea2f10812134e7b6517db616"
+      url "https://github.com/tiny-systems/tiny/releases/download/v0.10.0/tiny_0.10.0_linux_amd64.tar.gz"
+      sha256 "6e47523121023d098457614c81e1686f04a30ff3c257b3ecb4c75a9b7b4f79d8"
       define_method(:install) do
         bin.install "tiny"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/tiny-systems/tiny/releases/download/v0.9.1/tiny_0.9.1_linux_arm64.tar.gz"
-      sha256 "6fe1d86e7e647296cd0e265086a04da5853a327fced1fa8c3281477aac2e5ad9"
+      url "https://github.com/tiny-systems/tiny/releases/download/v0.10.0/tiny_0.10.0_linux_arm64.tar.gz"
+      sha256 "877dc54b23a7e0915db6d25946253399721d730703b25daa283f0c1db476fe0c"
       define_method(:install) do
         bin.install "tiny"
       end
