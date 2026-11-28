@@ -1,6 +1,6 @@
 cask "tiny-systems" do
-  version "0.1.3"
-  sha256 "438bec351a97efc9839ec92097a5d2e07212ce28b66266b350d5df85ada33573"
+  version "0.1.4"
+  sha256 "fe7565e59e8bf8527f0a5a8ca64c15c42f87964022229ee8e5f141c3155f3d07"
 
   url "https://github.com/tiny-systems/tiny-systems/releases/download/v#{version}/Tiny-Systems-#{version}.dmg"
   name "Tiny Systems"
